@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Button btn1;
+    private Button btn2;
     private TextView txt1;
 
     @Override
@@ -16,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn1 = (Button)super.findViewById(R.id.btn1);
+        btn2 = (Button)super.findViewById(R.id.btn2);
         txt1 = (TextView)super.findViewById(R.id.txt);
 
         View.OnClickListener listener = new MyListener();
         btn1.setOnClickListener(listener);
+        btn2.setOnClickListener(listener);
     }
 }

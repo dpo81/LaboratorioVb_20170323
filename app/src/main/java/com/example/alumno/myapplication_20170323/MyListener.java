@@ -16,9 +16,10 @@ public class MyListener implements View.OnClickListener {
     public void onClick(View v) {
         // Perform action on click
 
-        txt1 = (TextView) super.findViewById(R.id.txt);
-
-        Log.d("CLICK", "SE HIZO CLICK");
-        //txt1.setText(R.string.saludar2);
+        if (v.getId() == R.id.btn1) {
+            Log.d("CLICK", "SE HIZO CLICK EN BTN 1");
+        } else {
+            Log.d("CLICK", "SE HIZO CLICK EN BTN 2");
+        }
     }
 }
